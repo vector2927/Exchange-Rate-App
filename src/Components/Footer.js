@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
 
       <div className='d-block text-center text-light container-fluid fixed-bottom mb-5'>
-          <div>Copy Rights to SMT - "A project task done for Job Application at Career Tech Japan"</div>
+          <div>Copy Rights to Mr. Soe Min Thu - "A project task done for Job Application at Career Tech Japan"</div>
       </div>
     </div>
   )

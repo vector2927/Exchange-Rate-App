@@ -53,16 +53,20 @@ html
   color : #f8d704;
 }
 
+.nav-logo{
+  width : 2em;
+  height: auto;
+}
+
 .ratebox{
   width: 60%;
   margin-top: 200px;
   border-radius: 30px ;
   text-align: center;
   padding: 10px;
-  height: auto;
+  max-height: auto;
   background-color: rgba(78, 78, 78, 0.695);
-  transition: height 1s ease;
-  transform: transition 1s ease;
+  /* transition: height 5s ease; */
 }
 
 
