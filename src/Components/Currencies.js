@@ -8,19 +8,6 @@ const Currencies = () => {
     
     const [apiLink, setApiLink] = useState(null);
 
-    // const data = {
-    //     success: true,
-    //     terms: "https://currencylayer.com/terms",
-    //     privacy: "https://currencylayer.com/privacy",
-    //     timestamp: 1696396503,
-    //     source: "USD",
-    //     quotes: {
-    //       USDEUR: 0.955105,
-    //       USDGBP: 0.82763,
-    //       USDCAD: 1.369855
-    //     }
-    //   }
-
     const [data,setData] = useState({});
     const handleChange = (e) => {
         const newCurrency = e.target.value;
@@ -65,22 +52,28 @@ const Currencies = () => {
     return (
         <div>
             <div className='d-flex justify-content-center col'>
-                <input 
-                    type='number' 
-                    className='form-control currency-amount me-3' 
-                    value={value} 
-                    onChange={handleInputChange}
-                />
+                <div className='row container-fluid'>
+                    <div className='col-md-6 col-sm-12 col-lg-6 justify-content-lg-end justify-content-md-end justify-content-center d-flex'>
+                        <input 
+                            type='number' 
+                            className='form-control currency-amount me-lg-3' 
+                            value={value} 
+                            onChange={handleInputChange}
+                        />
+                    </div>
 
-                <select  className='col-12 form-select currency-list bg-light' 
-                onChange={handleChange}
-                >
-                    <option value="" disabled selected>Please Select Currency</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="GBP">GBP</option>
-                    <option value="CAD">CAD</option>
-                </select>
+                    <div className='col-md-6 col-sm-12 col-lg-6 justify-content-center justify-content-lg-start justify-content-md-start d-flex'>
+                        <select  className='form-select currency-list bg-light' 
+                        onChange={handleChange}
+                        >
+                            <option value="" disabled selected>Currency</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CAD">CAD</option>
+                        </select>
+                    </div>
+                </div>
                 
             </div>
 
