@@ -52,3 +52,24 @@ html
 .nav-text{
   color : #f8d704;
 }
+
+.ratebox{
+  width: 60%;
+  margin-top: 200px;
+  border-radius: 30px ;
+  text-align: center;
+  padding: 10px;
+  height: auto;
+  background-color: rgba(78, 78, 78, 0.695);
+  transition: height 1s ease;
+  transform: transition 1s ease;
+}
+
+
+.currency-list{
+  width: 30%;
+}
+
+.currency-amount{
+  width: 10%;
+}
