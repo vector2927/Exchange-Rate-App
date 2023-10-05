@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Exchange-Rate-App/static/css/main.1edf23e3.css",
+    "main.js": "/Exchange-Rate-App/static/js/main.31574794.js",
+    "static/media/SF-Pro-Display-Regular.otf": "/Exchange-Rate-App/static/media/SF-Pro-Display-Regular.66355e898805b00d84bb.otf",
+    "static/media/euro-icon-2.png": "/Exchange-Rate-App/static/media/euro-icon-2.ff97de805a46cb3d2044.png",
+    "static/media/logo.png": "/Exchange-Rate-App/static/media/logo.822234605db69cd03c06.png",
+    "static/media/gbp-icon-1.png": "/Exchange-Rate-App/static/media/gbp-icon-1.0ac19f29f26ac5923f47.png",
+    "static/media/usd-icon-2.png": "/Exchange-Rate-App/static/media/usd-icon-2.5724abf75c6de87220f8.png",
+    "static/media/cad-icon.png": "/Exchange-Rate-App/static/media/cad-icon.7496aab699fa9b563df2.png",
+    "static/media/usd-icon-1.png": "/Exchange-Rate-App/static/media/usd-icon-1.58f37f5f115068f6c2e4.png",
+    "static/media/euro-icon-1.png": "/Exchange-Rate-App/static/media/euro-icon-1.6a1f26627053dc809791.png",
+    "index.html": "/Exchange-Rate-App/index.html",
+    "main.1edf23e3.css.map": "/Exchange-Rate-App/static/css/main.1edf23e3.css.map",
+    "main.31574794.js.map": "/Exchange-Rate-App/static/js/main.31574794.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1edf23e3.css",
+    "static/js/main.31574794.js"
+  ]
+}
