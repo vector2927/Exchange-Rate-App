@@ -9,21 +9,22 @@ const Currencies = () => {
     const [apiLink, setApiLink] = useState(null);
 
     const [data,setData] = useState({});
+
     const handleChange = (e) => {
         const newCurrency = e.target.value;
         setCurrency(newCurrency);
         switch (newCurrency) {
             case 'USD':
-              setApiLink('http://apilayer.net/api/live?access_key=aecf8378046a96b292076720f5c9f931&currencies=EUR,GBP,CAD&source=USD&format=1');
+              setApiLink('https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_Olm7FLckIIO2aYk3Pi3m2WD3EhSVsG8nLwR7ualD&currencies=EUR%2CGBP%2CCAD');
               break;
             case 'EUR':
-              setApiLink('http://apilayer.net/api/live?access_key=aecf8378046a96b292076720f5c9f931&currencies=USD,GBP,CAD&source=EUR&format=1');
+              setApiLink('https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_Olm7FLckIIO2aYk3Pi3m2WD3EhSVsG8nLwR7ualD&currencies=USD%2CGBP%2CCAD&base_currency=EUR');
               break;
             case 'GBP':
-              setApiLink('http://apilayer.net/api/live?access_key=aecf8378046a96b292076720f5c9f931&currencies=USD,EUR,CAD&source=GBP&format=1');
+              setApiLink('https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_Olm7FLckIIO2aYk3Pi3m2WD3EhSVsG8nLwR7ualD&currencies=CAD%2CEUR%2CUSD&base_currency=GBP');
               break;
             case 'CAD':
-              setApiLink('http://apilayer.net/api/live?access_key=aecf8378046a96b292076720f5c9f931&currencies=USD,GBP,EUR&source=CAD&format=1');
+              setApiLink('https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_Olm7FLckIIO2aYk3Pi3m2WD3EhSVsG8nLwR7ualD&currencies=GBP%2CEUR%2CUSD&base_currency=CAD');
               break;
             default:
               setApiLink(null);

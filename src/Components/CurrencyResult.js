@@ -15,9 +15,9 @@ const CurrencyResult = (props) => {
                     <div className=' d-flex flex-row justify-content-center'>
                         <span className='col-6 fs-5 d-flex justify-content-end'>
                             <div>
-                                <p>{(data.quotes.USDEUR * value).toFixed(3)}</p>
-                                <p>{(data.quotes.USDGBP * value).toFixed(3)}</p>
-                                <p>{(data.quotes.USDCAD * value).toFixed(3)}</p>
+                                <p>{(data.data.EUR * value).toFixed(3)}</p>
+                                <p>{(data.data.GBP * value).toFixed(3)}</p>
+                                <p>{(data.data.CAD * value).toFixed(3)}</p>
                             </div>
                         </span>
                         <span className='col-6 fs-5 d-flex justify-content-start ms-2'>
@@ -38,9 +38,9 @@ const CurrencyResult = (props) => {
                     <div className=' d-flex flex-row justify-content-center'>
                         <span className='col-6 fs-5 d-flex justify-content-end'>
                             <div>
-                                <p>{(data.quotes.EURUSD * value).toFixed(3)}</p>
-                                <p>{(data.quotes.EURGBP * value).toFixed(3)}</p>
-                                <p>{(data.quotes.EURCAD * value).toFixed(3)}</p>
+                                <p>{(data.data.USD * value).toFixed(3)}</p>
+                                <p>{(data.data.GBP * value).toFixed(3)}</p>
+                                <p>{(data.data.CAD * value).toFixed(3)}</p>
                             </div>
                         </span>
                         <span className='col-6 fs-5 d-flex justify-content-start ms-2'>
@@ -61,9 +61,9 @@ const CurrencyResult = (props) => {
                     <div className=' d-flex flex-row justify-content-center'>
                         <span className='col-6 fs-5 d-flex justify-content-end'>
                             <div>
-                                <p>{(data.quotes.GBPUSD * value).toFixed(3)}</p>
-                                <p>{(data.quotes.GBPEUR * value).toFixed(3)}</p>
-                                <p>{(data.quotes.GBPCAD * value).toFixed(3)}</p>
+                                <p>{(data.data.USD * value).toFixed(3)}</p>
+                                <p>{(data.data.EUR * value).toFixed(3)}</p>
+                                <p>{(data.data.CAD * value).toFixed(3)}</p>
                             </div>
                         </span>
                         <span className='col-6 fs-5 d-flex justify-content-start ms-2'>
@@ -84,9 +84,9 @@ const CurrencyResult = (props) => {
                     <div className=' d-flex flex-row justify-content-center'>
                         <span className='col-6 fs-5 d-flex justify-content-end'>
                             <div>
-                                <p>{(data.quotes.CADUSD * value).toFixed(3)}</p>
-                                <p>{(data.quotes.CADGBP * value).toFixed(3)}</p>
-                                <p>{(data.quotes.CADEUR * value).toFixed(3)}</p>
+                                <p>{(data.data.USD * value).toFixed(3)}</p>
+                                <p>{(data.data.GBP * value).toFixed(3)}</p>
+                                <p>{(data.data.EUR * value).toFixed(3)}</p>
                             </div>
                         </span>
                         <span className='col-6 fs-5 d-flex justify-content-start ms-2'>
@@ -108,7 +108,7 @@ const CurrencyResult = (props) => {
         
   return (
     <div className='col-12 d-flex justify-content-center mt-3'>
-                {data && data.quotes ? 
+                {data && data.data ? 
                     <HtmlText />
                 : null}
             </div>
